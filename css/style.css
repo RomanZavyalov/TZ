@@ -118,7 +118,6 @@ form {
     margin: 0 auto;
 }
 .task .tsk{
-    margin-top: 6vh;
     border: solid 0.2vh #000;
     display: inline-block;
     padding: 2vh 2vw 3vh 2vw;
@@ -216,13 +215,14 @@ form {
     height: 12vh;
 }
 .t_add {
-    height: 95vh;
+    height: 124vh;
+    margin: 2vh auto 2vh auto;
 }
 .t_add form {
     margin-top: 2vh;
 }
-.t_add {
-    margin: 1vh auto 0 auto;
+.t_add a {
+    margin-bottom: 2vh;
 }
 .nm_tsk {
     margin: 3vh 0 1vh 0;
@@ -240,4 +240,20 @@ form {
 }
 .sty {
     height: 17vh;
+}
+.task .dt {
+    justify-content: space-between;
+    margin-top: 6vh;
+}
+.dt p {
+    border: solid 0.2vh #000;
+    padding: 1vh 1vw;
+    margin: 0;
+    border-bottom: none;
+}
+.dt .strt::before {
+    content:"Начало: "
+}
+.dt .nd::before {
+    content:"Завершение: ";
 }

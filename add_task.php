@@ -31,6 +31,11 @@ if (!$_SESSION['user']) {
             <input type="text" name="name_task" placeholder="Введите название задания">
             <label>Текст задания</label>
             <textarea name="text_task" placeholder="Введите задание" cols="30" rows="10"></textarea>
+            <h3>Сроки выполнения:</h3>
+            <label>Дата начала:</label>
+            <input type="date" name="date_star_task">
+            <label>Дата окончания:</label>
+            <input type="date" name="date_end_task">
             <button>Отправить</button>
         </form>
         <a class="back" href="tasks.php">Назад</a>

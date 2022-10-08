@@ -26,6 +26,10 @@ if (!$_SESSION['user']) {
             foreach ($tasks as $task) {
         ?>
         <div class="ts">
+        <div class="edt dt">
+            <p class="strt"><?= $task[7]?></p>
+            <p class="nd"><?= $task[8]?></p>
+        </div>
             <div class="tsk">
                 <div class="header_tsk">
                     <div class="customer">

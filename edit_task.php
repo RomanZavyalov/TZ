@@ -37,6 +37,11 @@ $task = mysqli_fetch_assoc($task);
             <input type="text" name="name_task" value="<?= $task['task_name']?>" placeholder="Введите название задания">
             <label>Текст задания</label>
             <textarea name="text_task" placeholder="Введите задание" cols="30" rows="10"><?= $task['task_text']?></textarea>
+            <h3>Сроки выполнения:</h3>
+            <label>Дата начала:</label>
+            <input type="date" name="date_star_task"  value="<?= $task['task_start_date']?>">
+            <label>Дата окончания:</label>
+            <input type="date" name="date_end_task" value="<?= $task['task_end_date']?>">
             <button>Отправить</button>
         </form>
         <a class="back" href="tasks.php">Назад</a>
